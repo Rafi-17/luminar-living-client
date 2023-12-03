@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "coupon_name": "2% OFF",
+      "coupon_code": "luminar2p"
+    },
+    {
+      "id": 2,
+      "coupon_name": "5% OFF",
+      "coupon_code": "luminar5p"
+    },
+    {
+      "id": 3,
+      "coupon_name": "15% OFF",
+      "coupon_code": "luminarSpecialP"
+    },
+    {
+      "id": 4,
+      "coupon_name": "500TK OFF",
+      "coupon_code": "luminar500d"
+    },
+    {
+      "id": 5,
+      "coupon_name": "1000TK OFF",
+      "coupon_code": "luminarSpecialD"
+    }
+  ]

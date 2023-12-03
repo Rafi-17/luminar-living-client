@@ -5,8 +5,7 @@ import './Navbar.css'
 const Navbar = () => {
     const navOptions = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to={'/menu'}>Our Menu</NavLink></li>
-        <li><NavLink to={'/order/salad'}>Order Food</NavLink></li>
+        <li><NavLink to={'/apartment'}>Apartment</NavLink></li>
         <li><NavLink to={'/login'}>Login</NavLink></li>
     </>
 

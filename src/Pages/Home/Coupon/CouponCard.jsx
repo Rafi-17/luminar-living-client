@@ -8,7 +8,7 @@ const CouponCard = ({coupon}) => {
                     <h2 className="card-title text-2xl font-bold">{coupon_name}</h2>
                     <p className="text-lg font-bold">Coupon Code: <span className="text-purple-600 text-xl font-extrabold">{coupon_code}</span></p>
                     <div className="card-actions justify-end">
-                    <button className="btn bg-green-600 px-12 text-white text-lg border-0 hover:text-yellow-400 hover:bg-black">Use</button>
+                    <button className="btn bg-gradient-to-r from-green-500 to-green-800 px-12 text-white text-lg border-0 hover:text-yellow-400 hover:text-3xl">Use</button>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import SeectionTitle from "../../../Components/SectionTitle/SeectionTitle";
 
 const About = () => {
     return (
-        <div className="my-24 px-2 lg:px-0">
+        <div className="my-24 px-2 rounded-md py-8 bg-slate-100">
             <SeectionTitle heading={'About Building'}></SeectionTitle>
             <div className="text-black">
                 <p className="text-3xl font-bold mb-4">Welcome to <b className="text-green-500">Luminar Living</b>, where modern living meets timeless elegance. Our building stands as a testament to architectural brilliance and a commitment to providing unparalleled living experiences.</p>

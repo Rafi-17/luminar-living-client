@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-// import { AuthContext } from "../../Providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
-    // const { login, setLoading, googleLogin } = useContext(AuthContext);
+    const { login, setLoading, googleLogin } = useContext(AuthContext);
     const [show, setShow] = useState(false);
     const [typed, setTyped] = useState("");
     const navigate=useNavigate();
@@ -20,6 +20,7 @@ const Login = () => {
         login(email, password)
           .then((result) => {
             console.log(result.user);
+            setLoading(false)
             Swal.fire({
                 title: 'Great!',
                 text: 'Logged in successfully',
@@ -63,7 +64,7 @@ const Login = () => {
       };
 
     return (
-        <div className="bg-gray-200 min-h-[85vh] md:pt-12 max-w-[1440px] mx-auto dark:text-black">
+        <div className="bg-gray-200 min-h-[85vh] md:pt-20 max-w-[1440px] mx-auto dark:text-black">
         <div className="md:w-3/4 lg:w-[32%] mx-auto bg-white pt-14 pb-6 px-14 rounded-md">
             <h2 className="text-3xl font-bold text-purple-500">Login</h2>
             <form onSubmit={handleLogin}>

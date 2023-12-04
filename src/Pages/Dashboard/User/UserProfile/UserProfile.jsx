@@ -1,8 +1,6 @@
-import useAgreement from "../../../../hooks/useAgreement";
 
-const Profile = () => {
-    const [agreements]= useAgreement();
-    console.log(agreements);
+const userProfile = () => {
+    
     return (
         <div>
             My profile            
@@ -10,4 +8,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default userProfile;

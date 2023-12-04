@@ -8,7 +8,7 @@ const ApartmentCard = ({apartment}) => {
     const {apartment_image, floor_no, block_name, apartment_no, rent}=apartment
     const handleAgreement=()=>{
         const newAgreement={userName: user.displayName, email:user.email, floor_no, block_name, apartment_no, rent, status: 'pending'}
-        axios.post('http://localhost:5000/agreements',newAgreement)
+        axios.post('http://localhost:5000/requestedAgreements',newAgreement)
         .then(data=>{
             console.log(data.data);
             if(data.data.insertedId){

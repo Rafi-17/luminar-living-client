@@ -49,8 +49,9 @@ const Register = () => {
           .then((result) => {
             
             //update profile
-            profileUpdate(name, photo).then(() => {
-                const userInfo={name,email,photo}
+            profileUpdate(name, photo)
+            .then(() => {
+                const userInfo={name,email,photo, role:'member'}
                 axiosPublic.post('/users',userInfo)
                 .then(res=>{
                     if(res.data.insertedId){

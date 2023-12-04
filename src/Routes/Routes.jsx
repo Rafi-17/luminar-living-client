@@ -9,6 +9,9 @@ import Register from "../Pages/Register/Register";
 import Dashboard from "../Layout/Dashboard";
 import Profile from "../Pages/Dashboard/User/UserProfile/UserProfile";
 import PrivateRoute from "./PrivateRoute";
+import AllRequests from "../Pages/Dashboard/Admin/AgreementRequests/AllRequests";
+import AdminProfile from "../Pages/Dashboard/Admin/AdminProfile/AdminProfile";
+import ManageMember from "../Pages/Dashboard/Admin/ManageMember/ManageMember";
   
 
 export const router = createBrowserRouter([
@@ -40,8 +43,21 @@ export const router = createBrowserRouter([
       element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
       children:[
         {
-          path:'/dashboard/profile',
+          path:'/dashboard/userProfile',
           element:<Profile></Profile>
+        },
+        // admin
+        {
+          path:'/dashboard/allRequests',
+          element:<AllRequests></AllRequests>
+        },
+        {
+          path:'/dashboard/adminProfile',
+          element:<AdminProfile></AdminProfile>
+        },
+        {
+          path:'/dashboard/manageMember',
+          element:<ManageMember></ManageMember>
         },
       ]
     }

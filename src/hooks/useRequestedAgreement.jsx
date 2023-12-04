@@ -3,17 +3,17 @@ import useAxiosSecure from "./useAxiosSecure";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
-const useAgreement=()=>{
+const useRequestedAgreement=()=>{
     const axiosSecure= useAxiosSecure();
     const {user}= useContext(AuthContext);
-    const {data:agreement=[]}= useQuery({
-        queryKey:['agreement', user?.email],
+    const {data:requestedAgreement=[]}= useQuery({
+        queryKey:['requestedAgreement', user?.email],
         queryFn: async()=>{
-            const res= await axiosSecure.get(`/agreements?email=${user?.email}`);
+            const res= await axiosSecure.get(`/requestedAgreements`);
             return res.data
         }
     })
-    return [agreement]
+    return [requestedAgreement]
 }
 
-export default useAgreement;
+export default useRequestedAgreement;

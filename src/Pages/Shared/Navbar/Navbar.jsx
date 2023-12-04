@@ -28,7 +28,7 @@ const Navbar = () => {
     </>
     const profileLinks = <>
         <li><NavLink>{user?.displayName}</NavLink></li>
-        <li><NavLink to={'/dashboard/profile'}>Dashboard</NavLink></li>
+        <li><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
         <li><NavLink onClick={handleLogout}>Logout</NavLink></li>
     </>
     

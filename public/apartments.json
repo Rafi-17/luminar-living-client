@@ -1,0 +1,115 @@
+[
+    {
+      "_id": 1,
+      "apartment_image": "https://media.istockphoto.com/id/1289883686/photo/spacious-apartment-with-window-wall.webp?b=1&s=170667a&w=0&k=20&c=jjGtivMy9dz60nrCuNhQVcS60ZMW9KMkVAg7GWzScPQ=",
+      "floor_no": 3,
+      "block_name": "A",
+      "apartment_no": "A301",
+      "rent": 22000
+    },
+    {
+      "_id": 2,
+      "apartment_image": "https://media.gettyimages.com/id/1266344111/photo/modern-living-room-interior-design-in-3d.jpg?s=612x612&w=gi&k=20&c=L5GV7RAumXzNZYqlUmHQWPxoxhmzw697FYyyn_i5uig=",
+      "floor_no": 7,
+      "block_name": "B",
+      "apartment_no": "B702",
+      "rent": 15000
+    },
+    {
+      "_id": 3,
+      "apartment_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLoQr1-Pxp1oImnDUNTjJ0yyKOiakbyUG7dw&usqp=CAU",
+      "floor_no": 5,
+      "block_name": "C",
+      "apartment_no": "C501",
+      "rent": 31000
+    },
+    {
+      "_id": 4,
+      "apartment_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAk4IakNzelhOIn9B6UQhqVDiNe0jRAjGVXw&usqp=CAU",
+      "floor_no": 2,
+      "block_name": "A",
+      "apartment_no": "A201",
+      "rent": 25000
+    },
+    {
+      "_id": 5,
+      "apartment_image": "https://www.thedoorsdepot.com/uploads/files/useful_information/apartment_entrance_door_tips_for_choosing17.jpg",
+      "floor_no": 6,
+      "block_name": "B",
+      "apartment_no": "B601",
+      "rent": 21300
+    },
+    {
+      "_id": 6,
+      "apartment_image": "https://image.made-in-china.com/2f0j00siZgEWkqZeoz/Modern-House-Apartment-Villa-Main-Gate-Doors-Wood-Pivot-Front-Entrance-Door-Designs.webp",
+      "floor_no": 4,
+      "block_name": "C",
+      "apartment_no": "C401",
+      "rent": 24000
+    },
+    {
+      "_id": 7,
+      "apartment_image": "https://thearchitectsdiary.com/wp-content/uploads/2020/05/feat-GO.D.jpg",
+      "floor_no": 8,
+      "block_name": "A",
+      "apartment_no": "A801",
+      "rent": 29000
+    },
+    {
+      "_id": 8,
+      "apartment_image": "https://i.pinimg.com/736x/8a/01/a5/8a01a5b36fe6923f4ef76b02aeb0aa1e.jpg",
+      "floor_no": 3,
+      "block_name": "B",
+      "apartment_no": "B302",
+      "rent": 18500
+    },
+    {
+      "_id": 9,
+      "apartment_image": "https://c8.alamy.com/comp/W5KEMF/different-rooms-in-apartment-interior-collage-with-modern-furniture-W5KEMF.jpg",
+      "floor_no": 5,
+      "block_name": "C",
+      "apartment_no": "C501",
+      "rent": 20000
+    },
+    {
+      "_id": 10,
+      "apartment_image": "https://thumbs.dreamstime.com/z/home-design-collage-interior-various-rooms-30636336.jpg?w=768",
+      "floor_no": 2,
+      "block_name": "A",
+      "apartment_no": "A202",
+      "rent": 30800
+    },
+    {
+      "_id": 11,
+      "apartment_image": "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/08/New-construction-interior-design-inspiration.jpg",
+      "floor_no": 6,
+      "block_name": "B",
+      "apartment_no": "B602",
+      "rent": 13500
+    },
+    {
+      "_id": 12,
+      "apartment_image": "https://media.architecturaldigest.com/photos/635fca1de3bc540330136178/16:9/w_2560%2Cc_limit/Living%2520room.jpg",
+      "floor_no": 4,
+      "block_name": "C",
+      "apartment_no": "C402",
+      "rent": 16500
+    },
+    {
+      "_id": 13,
+      "apartment_image": "https://previews.123rf.com/images/amoklv/amoklv1303/amoklv130300018/18368058-collage-of-luxurious-house-interior.jpg",
+      "floor_no": 8,
+      "block_name": "A",
+      "apartment_no": "A802",
+      "rent": 26500
+    },
+    {
+      "_id": 14,
+      "apartment_image": "https://c8.alamy.com/comp/2BFNJ2W/collage-with-ideas-for-childrens-room-interior-2BFNJ2W.jpg",
+      "floor_no": 3,
+      "block_name": "B",
+      "apartment_no": "B303",
+      "rent": 13800
+    }
+  ]
+  

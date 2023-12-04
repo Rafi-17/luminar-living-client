@@ -7,7 +7,7 @@ import Apartment from "../Pages/Apartment/Apartment";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Dashboard from "../Layout/Dashboard";
-import Profile from "../Pages/Dashboard/Profile/Profile";
+import Profile from "../Pages/Dashboard/User/UserProfile/UserProfile";
 import PrivateRoute from "./PrivateRoute";
   
 

@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { AuthContext } from "../../Provider/AuthProvider";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Register = () => {
+    const axiosPublic= useAxiosPublic()
     const { register, profileUpdate, setLoading, googleLogin } = useContext(AuthContext);
 
     const [show, setShow] = useState(false);
@@ -45,14 +47,21 @@ const Register = () => {
         //creating user
         register(email, password)
           .then((result) => {
-            Swal.fire({
-                title: 'Great!',
-                text: 'User created successfully',
-                icon:'success',
-                confirmButtonText: 'Cool'
-              })
+            
             //update profile
             profileUpdate(name, photo).then(() => {
+                const userInfo={name,email,photo}
+                axiosPublic.post('/users',userInfo)
+                .then(res=>{
+                    if(res.data.insertedId){
+                        Swal.fire({
+                            title: 'Great!',
+                            text: 'User created successfully',
+                            icon:'success',
+                            confirmButtonText: 'Cool'
+                          })
+                    }
+                })
               setLoading(false);
             });
             console.log(result.user);
@@ -69,7 +78,12 @@ const Register = () => {
       };
       const handleGoogleSign=()=>{
         googleLogin()
-        .then(()=>{
+        .then(result=>{
+            const userInfo={name:result.user?.displayName, email:result.user?.email, photo:result.user?.photoURL}
+            axiosPublic.post('/users', userInfo)
+            .then(res=>{
+                console.log(res.data);
+            })
             setLoading(false)
             Swal.fire({
                 title: 'Great!',

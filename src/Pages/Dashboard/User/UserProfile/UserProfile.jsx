@@ -1,4 +1,4 @@
-import useAgreement from "../../../hooks/useAgreement";
+import useAgreement from "../../../../hooks/useAgreement";
 
 const Profile = () => {
     const [agreements]= useAgreement();

@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 import './Apartment.css'
 
 const Apartment = () => {
-    const [currentPage, setCurrentPage]= useState(0)
+    const [currentPage, setCurrentPage]= useState(1)
     const {count}= useLoaderData();
     const itemPerPage= 6;
     const numberOfPages= Math.ceil(count/itemPerPage);

@@ -8,6 +8,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Dashboard from "../Layout/Dashboard";
 import Profile from "../Pages/Dashboard/Profile/Profile";
+import PrivateRoute from "./PrivateRoute";
   
 
 export const router = createBrowserRouter([
@@ -21,7 +22,8 @@ export const router = createBrowserRouter([
         },
         {
             path:'/apartment',
-            element:<Apartment></Apartment>
+            element:<Apartment></Apartment>,
+            loader: ()=>fetch('http://localhost:5000/apartmentsCount')
         },
         {
             path:'/login',
@@ -35,7 +37,7 @@ export const router = createBrowserRouter([
     },
     {
       path: '/dashboard',
-      element:<Dashboard></Dashboard>,
+      element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
       children:[
         {
           path:'/dashboard/profile',

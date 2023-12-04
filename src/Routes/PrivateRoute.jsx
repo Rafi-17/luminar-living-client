@@ -4,13 +4,13 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const PrivateRoute = ({children}) => {
-    const {user,loading}= useContext(AuthContext);
+    const {user,loading}= useContext(AuthContext );
     const location= useLocation();
     // console.log(location.pathname);
     if(loading){
         return <Loading></Loading>
     }
-    if(user?.email){
+    if(user){
         return children;
     }
 
